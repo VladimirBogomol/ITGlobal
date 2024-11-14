@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+.page {
+    font-family: "Open sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 1552px;
+}
+
+.button,
+.header__user-settings,
+.header__toggle,
+.form__input--btns-wrapper button,
+.sidebar__unpin,
+.sidebar__controls button,
+.modal__controls--cancel-button,
+.modal__controls--save-button,
+.modal .modal__controls--cancel-button {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.button:focus,
+.form__input--btns-wrapper button:focus,
+.header__user-settings:hover,
+.header__toggle:hover,
+.content .createBtn:focus,
+.content__header button:focus,
+.content__header-small button:focus,
+.sidebar__unpin:focus,
+.sidebar__controls button:focus,
+.header__user-settings:focus,
+.header__toggle:focus,
+.button:hover,
+.form__input--btns-wrapper button:hover,
+.content .createBtn:hover,
+.content__header button:hover,
+.content__header-small button:hover,
+.sidebar__unpin:hover,
+.sidebar__controls button:hover,
+.modal__controls--cancel-button:focus,
+.modal__controls--save-button:focus,
+.modal .modal__controls--cancel-button:focus,
+.modal__controls--cancel-button:hover,
+.modal__controls--save-button:hover,
+.modal .modal__controls--cancel-button:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button-border,
+.form__input--btns-wrapper button,
+.header__user-settings,
+.header__toggle,
+.content .createBtn,
+.content__header button,
+.content__header-small button,
+.content,
+.sidebar__unpin,
+.sidebar__menu-container,
+.sidebar__search,
+.sidebar__controls,
+.modal__controls--cancel-button,
+.modal__controls--save-button,
+.modal .modal__controls--cancel-button {
+    border: 1px solid #d5d8dd;
+}
+
+.main {
+    display: flex;
+}

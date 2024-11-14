@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
+    <link rel="stylesheet" href="./css/content.css" />
+    <link rel="stylesheet" href="./css/form.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <title>IT Global</title>
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="/" class="header__logo" aria-label="Перейти на главную страницу">
+        <img
+          src="./img/logo.svg"
+          alt="SIMPLEONE"
+          class="header__logo-img"
+        />
+      </a>
+      <button class="header__toggle" type="button">
+        <img src="./img/sidebarIcon.svg" alt="открыть навигатор" />
+      </button>
+      <div class="header__search">
+        <input type="text" placeholder="Поиск" class="header__search-input" />
+        <div class="header__user">
+          <img
+            src="./img/avatar.png"
+            alt="Аватар"
+            class="header__user-avatar"
+          />
+          <span class="header__user-name">Максим Галактионов</span>
+          <button type="button" class="header__user-settings">
+            <img src="./img/settings.svg" alt="Настройки" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <aside class="sidebar">
+        <div class="sidebar__controls">
+          <button class="sidebar__toggle" type="button">
+            <img src="./img/sidebarIcon.svg" alt="Открыть сайдбар" />
+          </button>
+          <button class="sidebar__favorites" type="button">
+            <img src="./img/favIcon.svg" alt="Избранное" />
+          </button>
+        </div>
+        <div class="sidebar__menu">
+          <div class="sidebar__menu-container">
+            <input
+              class="sidebar__search"
+              type="text"
+              name="sidebarSearch"
+              placeholder="Поиск по меню"
+            />
+            <button class="sidebar__unpin" type="button">
+              <img src="./img/unpinIcon.svg" alt="Открепить" />
+            </button>
+          </div>
+          <ul class="sidebar__list">
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="/">
+                <img src="./img/arrow.svg" alt="Стрелка" />Моя работа
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="/">
+                <img src="./img/arrow.svg" alt="Стрелка" />Структура
+                портала
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="/">
+                <img src="./img/arrow.svg" alt="Стрелка" />Личное
+                расписание
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="/">
+                <img src="./img/arrow.svg" alt="Стрелка" />Отсутствие
+                на рабочем месте
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="/">
+                <img src="./img/arrow.svg" alt="Стрелка" />Портфель
+                услуг
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="/">
+                <img src="./img/arrow.svg" alt="Стрелка" />Дашборды
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="/">
+                <img src="./img/arrow.svg" alt="Стрелка" />Доски задач
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="/">
+                <img src="./img/arrow.svg" alt="Стрелка" />Обращения
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="/">
+                <img src="./img/arrow.svg" alt="Стрелка" />Инциденты
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="/">
+                <img src="./img/arrow.svg" alt="Стрелка" />Проблемы
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="/">
+                <img src="./img/arrow.svg" alt="Стрелка" />Настройки
+                каталогов
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="/">
+                <img src="./img/arrow.svg" alt="Стрелка" />Запросы на
+                обслуживание
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="/">
+                <img src="./img/arrow.svg" alt="Стрелка" />Запросы на
+                изменение
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="/">
+                <img src="./img/arrow.svg" alt="Стрелка" />Управление
+                конфигурациями
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="/">
+                <img src="./img/arrow.svg" alt="Стрелка" />Управление
+                уровнем услуг
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="/">
+                <img src="./img/arrow.svg" alt="Стрелка" />Настройка
+                соответствий
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <section class="content">
+        <div class="content__header-small">
+          <h3>Подзадачи</h3>
+          <button id="kebab" type="button">
+            <img src="./img/kebab.svg" alt="Кебаб" />
+          </button>
+        </div>
+        <div class="content__header">
+          <div class="content__title">
+            <h3>Подзадача</h3>
+            <button type="button" id="openModal">Создать</button>
+          </div>
+          <div class="content__actions">
+            <button class="content__actions--save-button" type="button">
+              Сохранить
+            </button>
+            <button type="button">Сохранить и выйти</button>
+          </div>
+        </div>
+        <form class="form" id="taskForm">
+          <h1 class="form__title">
+            STSK0004783 На инциденте, запросе, проблеме, в статусе закрыто
+            некоторые поля остаются редактируемыми для агента если он Caller
+          </h1>
+          <div class="form__row">
+            <div class="form__input-wrapper">
+              <label class="form__label form__label--red-flag" for="theme"
+                >Тема</label
+              >
+              <input class="form__input" id="theme" type="text" />
+            </div>
+            <div class="form__input-wrapper">
+              <label class="form__label" for="status">Статус</label>
+              <input class="form__input" type="text" id="status" />
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__input-wrapper">
+              <label class="form__label" for="description">Описание</label>
+              <input class="form__input" type="text" id="description" />
+            </div>
+            <div class="form__input-wrapper">
+              <label class="form__label" for="product">Продукт</label>
+              <input class="form__input" type="text" id="product" />
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__input-wrapper">
+              <label class="form__label form__label--red-flag" for="notes"
+                >Рабочие заметки</label
+              >
+              <input class="form__input" type="text" id="notes" />
+            </div>
+            <div class="form__input-wrapper">
+              <label class="form__label" for="priority">Приоритет</label>
+              <input class="form__input" type="text" id="priority" />
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__input-wrapper">
+              <label class="form__label" for="responsible">Ответственный</label>
+              <div class="form__input--btns-wrapper">
+                <input class="form__input" type="text" id="responsible" />
+                <button type="button">
+                  <img src="./img/plus.svg" alt="" />
+                </button>
+                <button type="button">
+                  <img src="./img/searchIcon.svg" alt="Search" />
+                </button>
+              </div>
+            </div>
+            <div class="form__input-wrapper">
+              <label class="form__label" for="group">Группа</label>
+              <div class="form__input--btns-wrapper">
+                <input class="form__input" type="text" id="group" />
+                <button type="button">
+                  <img src="./img/plus.svg" alt="" />
+                </button>
+                <button type="button">
+                  <img src="./img/searchIcon.svg" alt="Search" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="form__row form__row--one">
+            <label class="form__label" for="comments">Комментарии</label>
+            <input class="form__input" id="comments" type="text" />
+          </div>
+          <div class="form__row form__row--one">
+            <label class="form__label" for="coordinating">Согласующие</label>
+            <div class="form__input--btns-wrapper">
+              <input class="form__input" type="text" id="coordinating" />
+              <button type="button">
+                <img src="./img/plus.svg" alt="" />
+              </button>
+              <button type="button">
+                <img src="./img/searchIcon.svg" alt="Search" />
+              </button>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__input-wrapper">
+              <label class="form__label" for="opened">Когда открыто</label>
+              <div
+                class="form__input--btns-wrapper form__input--btns-wrapper-without-after"
+              >
+                <input class="form__input" type="text" id="opened" />
+                <button type="button">
+                  <img src="./img/calendarIcon.svg" alt="Календарь" />
+                </button>
+              </div>
+            </div>
+            <div class="form__input-wrapper">
+              <label class="form__label" for="whoOpened">Когда создано</label>
+              <div
+                class="form__input--btns-wrapper form__input--btns-wrapper-without-after"
+              >
+                <input class="form__input" type="text" id="whoOpened" />
+                <button type="button">
+                  <img src="./img/calendarIcon.svg" alt="Календарь" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__input-wrapper">
+              <label class="form__label" for="whoOpen">Кем открыто</label>
+              <div class="form__input--btns-wrapper">
+                <input class="form__input" type="text" id="whoOpen" />
+                <button type="button">
+                  <img src="./img/calendarIcon.svg" alt="Календарь" />
+                </button>
+                <button type="button">
+                  <img src="./img/searchIcon.svg" alt="Search" />
+                </button>
+              </div>
+            </div>
+            <div class="form__input-wrapper">
+              <label class="form__label" for="whoCreate">Кем создано</label>
+              <div class="form__input--btns-wrapper">
+                <input class="form__input" type="text" id="whoCreate" />
+                <button type="button">
+                  <img src="./img/plus.svg" alt="" />
+                </button>
+                <button type="button">
+                  <img src="./img/searchIcon.svg" alt="Search" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <div class="modal__controls">
+          <h2>Подзадача</h2>
+          <button class="modal__controls--cancel-button" id="closeModalXs">
+            <img src="./img/closeIcon.svg" alt="Закрыть" />
+          </button>
+          <div class="modal__controls--buttons high">
+            <button class="modal__controls--cancel-button" id="closeModal">
+              Отменить
+            </button>
+            <button class="modal__controls--save-button" type="button">
+              Сохранить
+            </button>
+          </div>
+        </div>
+        <form id="modalForm"></form>
+        <div class="modal__controls--buttons low">
+          <button class="modal__controls--cancel-button" id="closeModalLow">
+            Отменить
+          </button>
+          <button class="modal__controls--save-button" type="button">
+            Сохранить
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

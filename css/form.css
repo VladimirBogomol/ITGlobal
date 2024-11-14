@@ -1,0 +1,87 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin: 0 16px;
+    padding-bottom: 32px;
+}
+
+.form__title {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.3333333333;
+    color: #2e3238;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.form__input-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 100%;
+}
+
+.form__row {
+    display: flex;
+    width: 100%;
+    column-gap: 16px;
+}
+
+.form__row--one {
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.form__label {
+    width: 100%;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form__label--red-flag::before {
+    content: "*";
+    color: #b21f00;
+    padding-right: 4px;
+}
+
+.form__input {
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.form__input--btns-wrapper {
+    display: flex;
+    flex-basis: 100%;
+    column-gap: 4px;
+    position: relative;
+}
+
+.form__input--btns-wrapper .form__input {
+    flex-grow: 1;
+}
+
+.form__input--btns-wrapper::after {
+    content: "";
+    position: absolute;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 1rem;
+    background: url("/img/deleteIcon.svg") no-repeat center;
+    background-size: contain;
+}
+
+.form__input--btns-wrapper button {
+    border-radius: 4px;
+}
+
+.form__input--btns-wrapper-without-after::after {
+    content: none;
+}
